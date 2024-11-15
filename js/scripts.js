@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Validación de credenciales
         if (username === 'EikaRRHH' && password === 'Pepinillo20*') {
             // Redirigir a la página de éxito
-            window.location.href = '../success.html';
+            window.location.href = 'success.html';
         } else {
             // Mostrar un mensaje de error si las credenciales son incorrectas
             alert('Erabiltzailea edo pasahitza ez da zuzena!');
