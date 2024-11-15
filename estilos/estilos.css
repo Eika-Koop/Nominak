@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('./imagenes/Eika.jpg'); /* URL de la imagen en la carpeta 'imagenes' */
+    background-image: url('./imagenes/Eika.jpg'); /* Ruta de la imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,4 +74,5 @@ button:hover {
 
 p#message {
     color: red;
+    font-size: 14px;
 }
