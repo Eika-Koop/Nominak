@@ -14,27 +14,28 @@ document.getElementById("accessAttempts").innerText = localStorage.getItem("inte
 // Manejar el evento de envío del formulario
 document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Evitar el envío del formulario
-    const password = document.getElementById("password").value;
     const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
     // Incrementar intentos de acceso
     localStorage.setItem("intentosAcceso", parseInt(localStorage.getItem("intentosAcceso")) + 1);
     document.getElementById("accessAttempts").innerText = localStorage.getItem("intentosAcceso");
 
-    // Verificar usuario y contraseña
+    // Validar usuario y contraseña
     if (username === "EikaRRHH" && password === "Pepinillo20*") {
         localStorage.setItem("correctas", parseInt(localStorage.getItem("correctas")) + 1);
         window.location.href = "correcto.html"; // Redirige a la página correcta
     } else {
         localStorage.setItem("incorrectas", parseInt(localStorage.getItem("incorrectas")) + 1);
 
-        // Mostrar mensaje de error específico
+        // Mostrar mensaje de error
+        const message = document.getElementById("message");
         if (username !== "EikaRRHH" && password !== "Pepinillo20*") {
-            document.getElementById("message").innerText = "Usuario y contraseña incorrectos.";
+            message.innerText = "Usuario y contraseña incorrectos.";
         } else if (username !== "EikaRRHH") {
-            document.getElementById("message").innerText = "Usuario incorrecto.";
+            message.innerText = "Usuario incorrecto.";
         } else if (password !== "Pepinillo20*") {
-            document.getElementById("message").innerText = "Contraseña incorrecta.";
+            message.innerText = "Contraseña incorrecta.";
         }
     }
 });
