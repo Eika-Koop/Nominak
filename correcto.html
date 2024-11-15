@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>¡Bienvenido!</h2>
-    <img src="https://via.placeholder.com/400" alt="Imagen de bienvenida">
+    <div class="container">
+        <h1>¡Bienvenido!</h1>
+        <p style="font-size: 20px;">
+            <strong>Usuarios que han accedido correctamente:</strong> 
+            <span id="correctAccessCount">0</span>
+        </p>
+        <img src="https://via.placeholder.com/400" alt="Imagen de bienvenida">
+    </div>
+    <script>
+        // Mostrar el contador de accesos correctos
+        document.getElementById("correctAccessCount").innerText = localStorage.getItem("correctas") || 0;
+    </script>
 </body>
 </html>
