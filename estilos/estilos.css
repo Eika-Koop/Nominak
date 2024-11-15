@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('./imagenes/Eika.jpg'); /* Ruta corregida */
+    background-image: url('../imagenes/Eika.jpg'); /* Ruta corregida */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
