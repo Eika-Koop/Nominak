@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = document.getElementById('password').value;
 
         // Validación de credenciales
-        if (username === 'EikaRRHH' && password === 'Pepinillo20*') {
+        if (username === 'EikaRRHH' && password === 'EiSC2024*') {
             // Redirigir a la página de éxito
             window.location.href = 'success.html';
         } else {
